@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>DemoIndex</h2>
+
+<div>
+    今年是：@DateTime.Now.Year 年
+    <br />
+    <!--我的名字是： @ViewData["Name"]-->
+    <br />
+    <!--我的名字是： @ViewBag.Name-->
+    <br />
+    我的名字是： @TempData["Name"]
+</div>
+

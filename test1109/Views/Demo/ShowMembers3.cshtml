@@ -1,0 +1,20 @@
+﻿@using test1109.Models
+@{
+    ViewBag.Title = "ShowMembers3";
+}
+
+<h2>ShowMembers3</h2>
+
+<div>
+    @{
+        foreach (var member in Model)
+        {
+            <label>會員編號:</label> @member.Id
+            <br />
+            <label>會員姓名:</label> @member.Name
+            <br />
+            <label>年齡:</label> @member.Age
+            <hr />
+        }
+    }
+</div>
